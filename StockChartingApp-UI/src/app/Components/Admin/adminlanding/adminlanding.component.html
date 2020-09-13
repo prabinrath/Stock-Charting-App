@@ -1,0 +1,48 @@
+
+<div class="container">
+    
+    <table class="table table-hover">
+        <tr>
+            <td>
+                
+                <button type="button" class="btn btn-primary" style="font-size: 20px;"
+                (click)="ImportStockPrices()">Import Stock Prices</button>
+                
+            </td>
+            <td>
+                
+                <button type="button" class="btn btn-primary" style="font-size: 20px;"
+                (click)="ManageCompanies()">Manage Companies</button>
+                
+            </td>
+            <td>
+                
+                <button type="button" class="btn btn-primary" style="font-size: 20px;"
+                (click)="ManageExchanges()">Manage Exchanges</button>
+                
+            </td>
+            <td>
+                
+                <button type="button" class="btn btn-primary" style="font-size: 20px;"
+                (click)="ManageIPODetails()">Manage IPO Details</button>
+                
+            </td>
+            <td>
+                
+                <button type="button" class="btn btn-primary" style="font-size: 20px;"
+                (click)="ManageSector()">Manage Sectors</button>
+                
+            </td>
+            <td>
+                
+                <button type="button" class="btn btn-primary" 
+                style="font-size: 20px; background: rgb(233, 179, 78);"
+                (click)="LogOut()">Log Out</button>
+                
+            </td>
+        </tr>
+    </table>
+    
+</div>
+
+<router-outlet></router-outlet>

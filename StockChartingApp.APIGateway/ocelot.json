@@ -1,0 +1,121 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/companyms",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "companyms.azurewebsites.net"
+          //"Port": 8002
+        }
+      ],
+      "UpstreamPathTemplate": "/companyservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/companyms/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "companyms.azurewebsites.net"
+          //"Port": 8002
+        }
+      ],
+      "UpstreamPathTemplate": "/companyservice/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/rolems",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rolems.azurewebsites.net"
+          //"Port": 8003
+        }
+      ],
+      "UpstreamPathTemplate": "/authservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/rolems/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rolems.azurewebsites.net"
+          //"Port": 8003
+        }
+      ],
+      "UpstreamPathTemplate": "/authservice/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/sectorms",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "sectorms.azurewebsites.net"
+          //"Port": 8004
+        }
+      ],
+      "UpstreamPathTemplate": "/sectorservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/sectorms/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "sectorms.azurewebsites.net"
+          //"Port": 8004
+        }
+      ],
+      "UpstreamPathTemplate": "/sectorservice/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/stockexchangems",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "stockexchangems.azurewebsites.net"
+          //"Port": 8005
+        }
+      ],
+      "UpstreamPathTemplate": "/stockexchangeservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/stockexchangems/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "stockexchangems.azurewebsites.net"
+          //"Port": 8005
+        }
+      ],
+      "UpstreamPathTemplate": "/stockexchangeservice/{url}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/uploadexcel",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "uploadexcelms.azurewebsites.net"
+          //"Port": 8006
+        }
+      ],
+      "UpstreamPathTemplate": "/uploadexcelservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/uploadexcel/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "uploadexcelms.azurewebsites.net"
+          //"Port": 8006
+        }
+      ],
+      "UpstreamPathTemplate": "/uploadexcelservice/{url}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://apigatewaysca.azurewebsites.net"
+  }
+}
